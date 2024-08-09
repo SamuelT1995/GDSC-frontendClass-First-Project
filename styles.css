@@ -156,3 +156,308 @@ nav ul li a:hover::after {
     margin-top: 0.5rem;
     color: #666;
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open sans';
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    padding: 50px 40px;
+    background-color: #9FFFEC;
+    border-radius: 100px 30px 5px 5px;
+    position: relative;
+}
+
+.bxl-telegram {
+    background: linear-gradient(201.65deg,
+            #32DF8F 10.27%,
+            #005F15 100%);
+    position: absolute;
+    color: #fff;
+    font-size: 2em;
+    border-radius: 50%;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.text {
+    position: relative;
+    color: #5E6282;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.subscribe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.subscribe input {
+    width: 40%;
+    padding: 15px 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.subscribe label {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    color: #5E6282;
+}
+
+.user-email:focus+.email-label {
+    background-color: #9FFFEC;
+    color: #5E6282;
+    top: -20px;
+    left: 185px;
+    transition: all 0.6s ease-in;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.subscribe button {
+    color: #fff;
+    background-color: #00A651;
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+.subscribe button:hover {
+    background-color: #006c35;
+}
+
+.playstore-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.playstore-button:hover {
+    background-color: #333333;
+}
+
+.playstore-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.playstore-text {
+    display: inline-block;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.playstore-text-light {
+    font-weight: 100;
+}
+
+.appstore-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.appstore-button:hover {
+    background-color: #333333;
+}
+
+.appstore-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.appstore-text {
+    display: inline-block;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.appstore-text-smaller {
+    font-size: 10px;
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 10px auto;
+}
+
+.travel-go-text {
+    width: 20%;
+}
+
+.travel-go-text h3 {
+    font-family: 'Laila';
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+}
+
+.goo {
+    font-size: 32px;
+}
+
+.travel-go-text p {
+    color: #5E6282;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+    justify-content: center;
+    list-style: none;
+    padding: 0 100px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 30px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.row3 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.row4 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.row1 a {
+    color: #080809;
+    font-weight: 700;
+}
+
+.row2,
+.row3,
+.row4 {
+    color: #5E6282;
+}
+
+.bxl-facebook {
+    color: #000000;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 #000000;
+}
+
+.bxl-instagram {
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff;
+    background: conic-gradient(from 180deg at 50% 50%,
+            #B8D2F1 0deg,
+            #F289AA 60deg,
+            #C68BF0 106.09deg,
+            #D164DA 153.75deg,
+            #C963E8 221.25deg,
+            #BFC2E8 258.75deg,
+            #FFC999 288.75deg,
+            #D0D8C9 315deg,
+            #BAD0F1 334.13deg,
+            #CED8CB 358.97deg,
+            rgba(255, 255, 255, 0) 360deg);
+    box-shadow: 0 0 10px 0 #000000;
+}
+
+.empty-media-icon {
+    border-radius: 50%;
+    padding: 8px 12px;
+    box-shadow: 0 0 10px 0 #000000;
+    color: #fff;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: self-start;
+}
+
+.app-text {
+    color: #5E6282;
+    font-size: 20px;
+}
+
+.app-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+footer {
+    color: #5E6282;
+    font-size: 14px;
+    text-align: center;
+    margin: 50px;
+}
