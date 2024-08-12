@@ -1,0 +1,706 @@
+ * {
+     margin: 0;
+     padding: 0;
+     /* box-sizing: border-box; */
+ }
+ 
+ body {
+     width: 100%;
+     overflow-x: hidden;
+ }
+ 
+ .packages {
+     padding: 54px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: space-between;
+     background-color: #ECF1F0;
+     font-family: Open sans, sans-serif;
+ }
+ 
+ .packages__title {
+     font-size: 40px;
+     font-weight: 700;
+     text-align: center;
+     line-height: 54.47px;
+ }
+ 
+ .packages__filter {
+     display: flex;
+     max-width: 100%;
+     margin-top: 48px;
+     justify-content: center;
+     flex-direction: row;
+     gap: 74px;
+     height: 20px;
+     left: 169px;
+ }
+ 
+ .packages__filter-btn {
+     width: 180px;
+     height: 60px;
+     border: none;
+     color: #ECF1F0;
+     background-color: #666;
+     border-radius: 10px;
+     font-weight: 700;
+     font-size: 20px;
+     margin-bottom: 167px;
+     cursor: pointer;
+ }
+ 
+ .packages__filter-btn:hover {
+     background-color: #00A651;
+     scale: 1.1;
+     transition: 0.15;
+ }
+ 
+ .packages__filter-btn-active {
+     width: 180px;
+     height: 60px;
+     border: none;
+     color: #ECF1F0;
+     border-radius: 10px;
+     font-weight: 700;
+     font-size: 20px;
+     background-color: #00A651;
+     cursor: pointer;
+ }
+ 
+ .packages__filter-btn-active:hover {
+     scale: 1.1;
+     transition: 0.15;
+ }
+ 
+ .catalogue {
+     width: 100%;
+     height: 489px;
+     margin-top: 167px;
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+ }
+ 
+ .box {
+     margin: 20px;
+     width: 434px;
+     height: 489px;
+     align-items: center;
+     justify-content: center;
+     background-color: white;
+     border-radius: 15px;
+     border: solid #ECF1F0 8px;
+     cursor: pointer;
+ }
+ 
+ .box:hover {
+     border-bottom: solid #00A651 8px;
+     scale: 1.01;
+     transition: 0.15s;
+ }
+ 
+ img {
+     width: 434px;
+     height: 300px;
+     display: flex;
+ }
+ 
+ p {
+     padding: 5px;
+     font-size: 16px;
+     font-weight: 600;
+     width: 300px;
+     line-height: 21.79px;
+ }
+ 
+ .heading {
+     width: 95%;
+     font-size: 20px;
+     font-weight: 400;
+     padding: 5px;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .footing {
+     width: 95%;
+     font-size: 20px;
+     font-weight: 400;
+     padding: 5px;
+     display: flex;
+     justify-content: space-between;
+     gap: 50px;
+     line-height: 27.24px;
+     position: relative;
+ }
+ 
+ .location {
+     position: relative;
+     right: 80px;
+ }
+ 
+ .discover-btn {
+     width: 300px;
+     height: 70px;
+     border: none;
+     color: #ECF1F0;
+     background-color: #00A651;
+     border-radius: 10px;
+     font-weight: 700;
+     font-size: 20px;
+     margin-top: 100px;
+     cursor: pointer;
+ }
+ 
+ i {
+     width: 5px;
+     color: black;
+     height: 5px;
+     position: relative;
+     top: 5px;
+ }
+ 
+ p {
+     margin-left: 10px;
+ }
+ 
+ .discover-btn:hover {
+     scale: 1.05;
+     transition: 0.15s;
+ }
+ 
+ .yourNextTrip {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-family: open sans;
+ }
+ 
+ .yourNextTrip__title {
+     font-size: 40px;
+     width: 703px;
+     position: relative;
+     margin-top: 52px;
+ }
+ 
+ .yourNextTrip__accesses {
+     display: flex;
+     flex-direction: row;
+     gap: 400px;
+ }
+ 
+ .text-title {
+     font-size: 16px;
+     font-weight: 700s;
+ }
+ 
+ .text-details {
+     font-size: 16px;
+     color: #5e6282;
+     font-weight: 400;
+ }
+ 
+ .yourNextTrip__accesses__alternatives {
+     display: flex;
+     flex-direction: column;
+     margin-left: 200px;
+     gap: 20px;
+     position: relative;
+     top: 50px;
+ }
+ 
+ #icon1 {
+     position: relative;
+     right: 70px;
+     top: 40px;
+     width: 50px;
+     height: 50px;
+     background-color: #f0bb1f;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     margin-left: 10px;
+     color: #ECF1F0;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+ }
+ 
+ #icon2 {
+     position: relative;
+     right: 70px;
+     top: 40px;
+     width: 50px;
+     height: 50px;
+     background-color: #f15a2b;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     margin-left: 10px;
+     color: #ECF1F0;
+     transform: scaleX(-1);
+     -webkit-transform: scaleX(-1);
+     -moz-transform: scaleX(-1);
+     -ms-transform: scaleX(-1);
+     -o-transform: scaleX(-1);
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+ }
+ 
+ #icon3 {
+     position: relative;
+     right: 70px;
+     top: 40px;
+     width: 50px;
+     height: 50px;
+     background-color: #006380;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     margin-left: 10px;
+     color: #ECF1F0;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+ }
+ 
+ .yourNextTrip__accesses__trip-card {
+     margin-top: 10px;
+     margin-left: 10px;
+     width: 389px;
+     height: 489px;
+     text-align: start;
+     align-items: start;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     background-color: white;
+     border-radius: 15px;
+     padding: 20px 20px;
+     position: relative;
+     bottom: 500px;
+     border-radius: 30px;
+     box-shadow: 0 3px 4px rgb(175, 171, 171);
+     font-family: poppins;
+     -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+     -ms-border-radius: 30px;
+     -o-border-radius: 30px;
+ }
+ 
+ .yourNextTrip__accesses__trip-card-before {
+     right: -10px;
+     top: -30px;
+     width: 500px;
+     height: 559px;
+     background: radial-gradient(circle, rgba(34, 163, 243, 0.3), white);
+     position: relative;
+     filter: blur(20px);
+     -webkit-filter: blur(20px);
+ }
+ 
+ .trip-to-Greece-text {
+     font-size: 18px;
+     line-height: 22.41px;
+     font-weight: 500;
+     color: #080809;
+ }
+ 
+ .trip-image {
+     position: relative;
+     bottom: 10px;
+     left: 10px;
+     width: 370px;
+     height: 171px;
+     display: flex;
+     padding-top: 16px;
+ }
+ 
+ .icons {
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ #icon {
+     width: 36px;
+     display: flex;
+     height: 36px;
+     border-radius: 50%;
+     background-color: #3a36361e;
+     color: #84829a;
+     position: relative;
+     align-items: center;
+     justify-content: center;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+ }
+ 
+ #buiding-icon {
+     margin-right: 15px;
+     color: #84829A;
+ }
+ 
+ .badge-box {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     position: absolute;
+     bottom: 85px;
+     left: 225px;
+     background: white;
+     opacity: 0.9;
+     border-radius: 30px;
+     width: 300px;
+     height: 130px;
+     text-align: center;
+     line-height: 1px;
+     filter: drop-shadow(5px white);
+     cursor: pointer;
+     padding: 10px;
+     box-shadow: 0 2px 4px rgb(175, 171, 171);
+     -webkit-filter: drop-shadow(5px white);
+     -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+     -ms-border-radius: 30px;
+     -o-border-radius: 30px;
+ }
+ 
+ .badge-box-content {
+     position: absolute;
+     left: 90px;
+     text-align: start;
+ }
+ 
+ .badge-box-content p {
+     font-size: 20px;
+     font-weight: 300;
+     position: relative;
+ }
+ 
+ .badge-box-content p span {
+     color: purple;
+ }
+ 
+ .badge-text {
+     margin-bottom: 18px;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 17.43px;
+     color: #84829A;
+ }
+ 
+ .white-house {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     position: absolute;
+     margin-left: 20px;
+     top: 10px;
+ }
+ 
+ .first-hr {
+     width: 156px;
+     height: 5px;
+     border-radius: 30px;
+     position: relative;
+     right: 5px;
+     bottom: -15px;
+ }
+ 
+ .second-hr {
+     position: relative;
+     height: 5px;
+     width: 73px;
+     background-color: #8A79DF;
+     bottom: -8px;
+     right: 6px;
+     border-radius: 30px;
+ }
+ 
+ .trip-to-rome-text {
+     font-size: 22px;
+     line-height: 22.41px;
+     font-weight: 500;
+     letter-spacing: -1.5%;
+     position: absolute;
+     top: 25px;
+     left: 15px;
+ }
+ 
+ .trip-percent-completion {
+     padding-top: 10px;
+     margin-top: 15px;
+     font-size: 14px;
+ }
+ 
+ .trip-card-footing {
+     font-size: 16px;
+     line-height: 19.92px;
+     color: #84829a;
+     font-weight: 500;
+ }
+ 
+ @media (max-width: 1440px) {
+     .packages {
+         height: 500px;
+         max-width: 100%;
+         align-items: center;
+         justify-content: center;
+     }
+     .packages__title {
+         margin-top: 40px;
+     }
+     .packages__filter {
+         width: 80%;
+         gap: 54px;
+     }
+     .packages__filter-btn,
+     .packages__filter-btn-active {
+         font-size: 14px;
+         padding: 8px;
+         height: 40px;
+         width: 100px;
+     }
+     .packages__filter-btn:hover,
+     .packages__filter-btn-active:hover,
+     .box:hover {
+         scale: 1.008;
+     }
+     .catalogue {
+         position: relative;
+         width: 80%;
+         top: -100px;
+     }
+     .box {
+         margin: 5px;
+         height: 250px;
+         width: 250px;
+     }
+     .box img {
+         width: 250px;
+         height: 120px;
+     }
+     .box p {
+         font-size: 12px;
+         width: 240px;
+         font-weight: 500;
+     }
+     .heading span {
+         position: relative;
+         left: -15px;
+     }
+     /* .footing {
+         position: relative; */
+     /* bottom: 5px;
+         justify-content: center; 
+         align-items: center; 
+     } */
+     .location {
+         position: relative;
+         left: -55px;
+     }
+     .footing i {
+         position: relative;
+         left: -10px;
+         top: 5px;
+     }
+     .first {
+         position: relative;
+         left: -25px;
+         align-self: center;
+     }
+     .discover-btn {
+         width: 170px;
+         position: absolute;
+         top: 430px;
+         font-size: 17px;
+         height: 40px;
+     }
+     .yourNextTrip {
+         width: 80%;
+        
+     }
+     .yourNextTrip__title {
+         margin-top: 50px;
+         font-size: 23px;
+         left: 250px;
+     }
+     .yourNextTrip__subtitle {
+         position: relative;
+         left: 150px;
+         font-size: 16px;
+         font-weight: 400;
+     }
+     .yourNextTrip__accesses__alternatives i {
+         position: absolute;
+         right: 70px;
+         top: 70px;
+         width: 40px;
+         height: 40px;
+     }
+     .text-title {
+         font-size: 14px;
+         font-weight: 700;
+     }
+     .text-details {
+         font-size: 13px;
+     }
+     .yourNextTrip__accesses__alternatives {
+         position: relative;
+         top: 20px;
+         right: -150px;
+         width: 150px;
+         height: 250px;
+         gap: 0;
+     }
+     .yourNextTrip__accesses__alternatives-destination,
+     .yourNextTrip__accesses__alternatives-payment,
+     .yourNextTrip__accesses__alternatives-airport {
+         margin-top: 0px;
+         margin-bottom: 0px;
+         padding: 0;
+     }
+     .yourNextTrip__accesses__trip-card {
+         margin-top: 250px;
+         margin-left: 10px;
+         width: 280px;
+         height: 309px;
+         text-align: start;
+     }
+     .yourNextTrip__accesses__trip-card-before {
+         right: -150px;
+         top: -50px;
+         width: 300px;
+         height: 300px;
+     }
+     .trip-to-Greece-day-text {
+         font-size: 16px;
+         color: #84829a;
+         line-height: 10px;
+         font-weight: 500;
+     }
+     .trip-image {
+         bottom: 10px;
+         left: 4px;
+         width: 270px;
+         height: 131px;
+         padding-top: 10px;
+     }
+     .badge-box {
+         bottom: 65px;
+         left: 230px;
+         width: 250px;
+         height: 100px;
+     }
+     .badge-box-content {
+         position: absolute;
+         left: 90px;
+         text-align: start;
+     }
+     .badge-box-content p {
+         font-size: 16px;
+     }
+     .white-house {
+         left: 0px;
+     }
+     .first-hr {
+         width: 136px;
+         right: -15px;
+         bottom: 0px;
+     }
+     .second-hr {
+         width: 53px;
+         bottom: 6px;
+         right: -15px;
+     }
+     .trip-to-rome-text {
+         font-size: 20px;
+         font-weight: 600;
+     }
+ }
+ 
+ @media (max-width: 992px) {
+     .packages {
+         width: 100%;
+         margin: 0;
+     }
+     .packages__title {
+         position: absolute;
+         top: 0;
+         font-size: 20px;
+         left: 150px;
+     }
+     .packages__filter-btn {
+         visibility: hidden;
+     }
+     .packages__filter-btn-active {
+         position: relative;
+         left: 260px;
+         top: 160px;
+         display: flex;
+         width: 200px;
+         padding: 10px;
+         font-size: 12px;
+     }
+     .catalogue {
+         position: relative;
+         top: 200px;
+         max-width: 70%;
+         flex-direction: column;
+         gap: 10px;
+     }
+     .box {
+         width: 200px;
+     }
+     .box img {
+         width: 200px;
+         height: 100px;
+     }
+     .box p {
+         font-size: 10px;
+         width: 180px;
+     }
+     .footing {
+         font-size: 8px;
+     }
+     .yourNextTrip {
+         position: relative;
+         top: 550px;
+     }
+     .discover-btn {
+         position: relative;
+         top: 400px;
+     }
+     .yourNextTrip__accesses {
+         flex-direction: column;
+     }
+     .yourNextTrip__title {
+         font-size: 16px;
+     }
+     .yourNextTrip__accesses__alternatives {
+         left: -70px;
+     }
+     .yourNextTrip__accesses__trip-card,
+     .yourNextTrip__accesses__trip-card img {
+         width: 200px;
+     }
+     .badge-box {
+         left: 180px;
+     }
+     .badge-box img {
+         width: 50px;
+     }
+ }
